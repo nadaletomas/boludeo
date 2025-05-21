@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -165,24 +165,4 @@ body {
   border-radius: 5px;
 }
 
-.contacto button {
-  padding: 0.75rem;
-  background: #e4002b;
-  border: none;
-  color: white;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.contacto button:hover {
-  background: #c30026;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #111;
-  color: #ccc;
-}
+.contact
