@@ -173,6 +173,7 @@ footer {
   color: white;
 }
 
+/* Fondo animado */
 #futuristic-bg {
   position: fixed;
   top: 0;
@@ -182,3 +183,65 @@ footer {
   height: 100%;
   background: black;
 }
+
+/* Botones modernos */
+.btn, .btn-sec, .contacto button {
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover, .btn-sec:hover, .contacto button:hover {
+  transform: scale(1.05);
+}
+
+/* Transiciones globales */
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Tipografía moderna */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Responsive mejorado */
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Modo oscuro automático */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #eee;
+  }
+
+  .modelos,
+  .sobre {
+    background: #1a1a1a;
+  }
+
+  .card {
+    background: #222;
+    color: white;
+  }
+
+  .btn, .btn-sec {
+    background: #00c3ff;
+    color: black;
+  }
+
+  .btn:hover, .btn-sec:hover {
+    background: #009dcc;
+  }
+}
+
