@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HAVAL Argentina</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <!-- Fondo futurista -->
@@ -18,7 +20,7 @@
     </div>
   </header>
 
-  <section id="modelos" class="modelos">
+  <section id="modelos" class="modelos" data-aos="fade-up">
     <h2>Modelos HAVAL</h2>
     <div class="grid">
       <div class="card">
@@ -36,7 +38,7 @@
     </div>
   </section>
 
-  <section class="tecnologia">
+  <section class="tecnologia" data-aos="fade-right">
     <h2>Tecnología y Seguridad</h2>
     <div class="features">
       <div class="feature">
@@ -54,13 +56,13 @@
     </div>
   </section>
 
-  <section class="sobre">
+  <section class="sobre" data-aos="fade-left">
     <h2>Sobre HAVAL</h2>
     <p>HAVAL es la marca especializada en SUVs del grupo Great Wall Motors, reconocida por su innovación, diseño robusto y seguridad. Presente en más de 60 países, lidera el segmento en Asia y se expande con fuerza en América Latina.</p>
     <img src="fabrica-haval.jpg" alt="Fábrica HAVAL" />
   </section>
 
-  <section class="contacto">
+  <section class="contacto" data-aos="zoom-in">
     <h2>Contacto</h2>
     <form id="contactForm">
       <input type="text" placeholder="Tu nombre" required />
@@ -77,5 +79,7 @@
   <!-- Scripts -->
   <script src="futuristic-bg.js"></script>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
