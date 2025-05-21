@@ -1,4 +1,4 @@
-// Smooth scroll al hacer clic en botones de anclaje
+// Scroll suave
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -12,9 +12,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Validación básica del formulario
+// Validación del formulario
 document.getElementById('contactForm').addEventListener('submit', function (e) {
-  e.preventDefault(); // Previene envío real
+  e.preventDefault();
 
   const nombre = this.querySelector('input[type="text"]').value.trim();
   const email = this.querySelector('input[type="email"]').value.trim();
@@ -25,16 +25,12 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     return;
   }
 
-  // Validación simple de email
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
     alert('Ingresá un email válido.');
     return;
   }
 
-  // Simular éxito
   alert('¡Gracias por contactarte! Te responderemos pronto.');
-
-  // Resetear formulario
   this.reset();
 });
